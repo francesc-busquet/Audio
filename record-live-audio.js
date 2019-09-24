@@ -1,7 +1,7 @@
 
 var recordButton = $(".recordButton");
 var stopButton = $(".stopButton");
-var randomNumber = $("#number").text();
+
 var blobFile;
 
 recordButton.on("click", startRecording);
@@ -58,7 +58,7 @@ function createDownloadLink(blob) {
 	var link = document.createElement('a');
 
 	//name of .wav file to use during upload and download (without extendion)
-	var filename = $("#number").text();
+	var filename = "fileaudio";
 
 	//add controls to the <audio> element
 	au.controls = true;
